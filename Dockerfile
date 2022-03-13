@@ -27,6 +27,7 @@ ENV RMR_SEED_RT /opt/route/local.rt
 
 RUN apk update && apk add gcc musl-dev
 RUN pip install ricxappframe
+RUN pip install --force-reinstall redis==3.0.1
 
 # Install
 COPY setup.py /tmp
